@@ -35,7 +35,7 @@ client.once("ready", () => {
         }
       },
       start: true,
-      timeZone: "America/Los_Angeles",
+      timeZone: "Europe/London",
     });
   }
 });
