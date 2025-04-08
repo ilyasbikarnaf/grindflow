@@ -34,8 +34,8 @@ Day 5:
 ### 1. Clone this repo
 
 ```bash
-git clone https://github.com/your-username/discord-daily-scheduler.git
-cd discord-daily-scheduler
+git@github.com:ilyasbikarnaf/grindflow.git
+cd grindflow
 ```
 
 ### 2. Install dependencies
@@ -92,7 +92,7 @@ The bot will post messages daily at the time you set in `CRONTIME`.
 
 ## 🧠 Customizing Messages
 
-Open `src/data.ts` and replace the message objects with your own or Connect with your database of choice:
+Open `src/data.ts` and replace the message objects with your own or connect with your database of choice:
 
 ```ts
 const data = [
