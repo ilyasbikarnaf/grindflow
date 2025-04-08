@@ -14,7 +14,7 @@ const client = new Client({
 
 client.once("ready", () => {
   const channel = client.channels.cache.get(process.env.CHANNELID!);
-  let days: number = Number(process.env.FIRSTDAY!);
+  let days: number = Number(process.env.FIRSTINDEX!);
 
   if (channel && channel.type === ChannelType.GuildText) {
     const job = CronJob.from({
@@ -30,7 +30,7 @@ client.once("ready", () => {
             💡 Difficulty: ${challenge.difficulty}
             🔗 Link: ${challenge.link}`
         );
-        if (days === Number(process.env.LASTDAY!)) {
+        if (days === Number(process.env.LASTINDEX!)) {
           job.stop();
         }
       },
